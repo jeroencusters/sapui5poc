@@ -1,0 +1,37 @@
+<core:View 
+	xmlns:core="sap.ui.core" 
+	xmlns:mvc="sap.ui.core.mvc" 
+	xmlns="sap.m"
+	controllerName="view.Master" 
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page 
+		title="{i18n>MasterTitle}">
+		<subHeader>
+			<Bar>
+				<contentLeft>
+					<SearchField
+						search="handleSearch"
+						width="100%" >
+					</SearchField>
+				</contentLeft>
+			</Bar>
+		</subHeader>
+		<List
+		    id="list"
+		   	items="{/EmployeeSet}" 
+			select="handleListSelect">
+			<ObjectListItem
+				press="handleListItemPress"
+				title="{Name}"
+				icon="{Icon}">
+				<attributes>
+					<ObjectAttribute text="{Email}" />
+				</attributes>
+				<firstStatus>
+					<ObjectStatus text="{City}" />
+				</firstStatus>
+			</ObjectListItem>
+		</List>
+		
+	</Page>
+</core:View>

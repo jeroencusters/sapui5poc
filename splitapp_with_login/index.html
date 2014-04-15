@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv='Content-Type' content='text/html;charset=UTF-8'/>
+		
+		<title>SplitApp with Logon screen</title>
+		<script id="sap-ui-bootstrap"
+				src="https://openui5.hana.ondemand.com/resources/sap-ui-core.js"
+				data-sap-ui-libs="sap.m, sap.ui.layout"
+				data-sap-ui-theme="sap_bluecrystal"
+				data-sap-ui-xx-bindingSyntax="complex">
+		</script>
+
+		<script>
+			// Tell UI5 where to find application content
+			sap.ui.localResources("view");
+			jQuery.sap.registerModulePath("Application", "Application");
+	
+			// Launch application
+			jQuery.sap.require("Application");
+			var oApp = new Application({root : "content"}); // instantiate your application and mark the HTML element with id "content" as location for the UI
+		</script>
+
+	</head>
+	<body class="sapUiBody" id="content">
+	</body>
+</html>

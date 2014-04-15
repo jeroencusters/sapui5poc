@@ -1,0 +1,15 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+		xmlns:html="http://www.w3.org/1999/xhtml">
+	<List>
+		<InputListItem label="{i18n>Username}">
+			<Input id="UserName"
+				placeholder="{i18n>Username}"
+				type="Text" />
+		</InputListItem>
+		<InputListItem label="{i18n>Password}">
+			<Input id="Password"
+				placeholder="{i18n>Password}"
+				type="Password" />
+		</InputListItem>
+	</List>
+</core:View>
