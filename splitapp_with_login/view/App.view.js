@@ -12,7 +12,7 @@ sap.ui.jsview("view.App", {
 		// create app
 		this.app = new sap.m.App();
 		
-		var empty = sap.ui.xmlview("Empty", "view.Empty")
+		var empty = sap.ui.xmlview("Empty", "view.Empty");
 		this.app.addPage(empty);
 		
 		var LoginView = sap.ui.xmlview("Login", "view.Login");
@@ -26,13 +26,13 @@ sap.ui.jsview("view.App", {
 			endButton: new sap.m.Button({
 				text: "Cancel",
 				press: this.getController().dialogCancel
-			})	
+			})
 		});
 		
 		this.splitApp = new sap.m.SplitApp();
 
 		// load the master page
-		this.splitApp.addMasterPage(sap.ui.xmlview("Master", "view.Master")); 
+		this.splitApp.addMasterPage(sap.ui.xmlview("Master", "view.Master"));
 		
 		// load the detail page
 		this.splitApp.addDetailPage(empty);

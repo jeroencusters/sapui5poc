@@ -7,17 +7,17 @@ sap.ui.controller("view.App", {
 	dialogConfirm : function(evt){
 		var oView = sap.ui.getCore().byId("app");
 
-		// TODO: Load model with provided credentials (i.e with Base64 encode)		  
+		// TODO: Load model with provided credentials (i.e with Base64 encode)  
 
-		// Add SplitApp as Page & close login dialog		  
+		// Add SplitApp as Page & close login dialog
 		oView.app.addPage(oView.splitApp);
-		oView.LoginDialog.close();		  
+		oView.LoginDialog.close();
 	},
 	
-	dialogCancel : function(evt){ 
+	dialogCancel : function(evt){
 		var oView = sap.ui.getCore().byId("app");
 		
 		// Close login dialog
-		oView.LoginDialog.close();	
+		oView.LoginDialog.close();
 	}
 });

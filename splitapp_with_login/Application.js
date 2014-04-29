@@ -1,5 +1,5 @@
 jQuery.sap.declare("Application");
-jQuery.sap.require("sap.ui.app.Application"); 
+jQuery.sap.require("sap.ui.app.Application");
 
 sap.ui.app.Application.extend("Application", {
 
